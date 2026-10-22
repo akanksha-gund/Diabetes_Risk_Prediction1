@@ -48,7 +48,7 @@ model = load_model()
 
 # Header Section
 st.markdown("<h1 style='text-align: center; color: #0d6efd;'>🏥 Health & Risk Prediction System</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; color: #6c757d;'>Tumchi mahiti khali bhurun ML model dwara prediction milva.</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #6c757d;'>Please fill in your details below to get predictions from the ML model.</p>", unsafe_allow_html=True)
 st.write("---")
 
 # Input Form
@@ -83,7 +83,7 @@ with st.form("prediction_form"):
     submitted = st.form_submit_button("🚀 Predict Result")
 
 if submitted:
-    # Note: Jar tumchya model madhye categorical variables sathi LabelEncoder ya OneHotEncoder lagat asel, 
-    # tar tyachi preprocessing ithe add karavi lagel.
+    # Note: If your model requires LabelEncoder or OneHotEncoder for categorical variables, 
+    # the corresponding preprocessing must be added here.
     
-    st.success("Data successfully processed! Model output dakhavla jat ahe.")
+    st.success("Data successfully processed! Displaying model output.")
